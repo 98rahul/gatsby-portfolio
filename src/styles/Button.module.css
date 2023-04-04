@@ -1,0 +1,38 @@
+.btn{
+    /* height: 30px; */
+    text-align: center;
+    width:auto;
+    padding: 3px 0;
+    /* background-color: blue; */
+}
+button {
+    outline: none;
+    color: #000;
+    border: none;
+    text-align: center;
+    padding: 3px 20px;
+    /* border: 1px solid #000; */
+}
+.plain{
+border:1px solid #000;
+background-color: red;
+}
+.plain button{
+    color:white;
+    background-color: red;
+}
+.primary{
+
+}
+.secondary{
+
+}
+.success{
+
+}
+.warning{
+
+}
+.danger{
+
+}
