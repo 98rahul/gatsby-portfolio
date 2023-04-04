@@ -1,38 +1,72 @@
-.btn{
-    /* height: 30px; */
+.btn {
+    box-sizing: border-box;
+    margin: 0;
+    min-width:22%;
     text-align: center;
-    width:auto;
-    padding: 3px 0;
-    /* background-color: blue; */
-}
-button {
-    outline: none;
+    padding: 8px 0;
     color: #000;
-    border: none;
-    text-align: center;
-    padding: 3px 20px;
-    /* border: 1px solid #000; */
+    font-weight: 500;
+ 
 }
-.plain{
-border:1px solid #000;
-background-color: red;
+
+.plain {
+    border: 1px solid #f8f9fa;
+    border:1px solid #f8f9fa;
+   
+    
 }
-.plain button{
-    color:white;
-    background-color: red;
+.primary {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color:#000
 }
-.primary{
+.info{
+    border: 1px solid #17a2b8;
+    background-color: #17a2b8;
+}
+.dark{
+    border: 1px solid #343a40;
+    background-color: #343a40;
+}
+
+
+
+
+.secondary {
+    border: 1px solid  #6c757d;
+    background-color: #6c757d;;
+}
+
+.success {
+     border: 1px solid  #28a745;
+     background-color: #28a745;
+}
+
+.warning {
+     border: 1px solid #ffc107;
+     background-color:#ffc107;
+}
+
+.danger {
+     border: 1px solid  #dc3545;
+     background-color:#dc3545;
+     color:#000
+}
+
+.rounded {
+    border-radius: 18px;
 
 }
-.secondary{
 
+.outline {
+    border-width: 3px;
+    background-color: #fff  !important;
+    color:#000;
+   
 }
-.success{
-
-}
-.warning{
-
-}
-.danger{
-
+.roundOutline{
+    background-color: #fff  !important;
+    color:#000;
+    /* border: 1px solid; */
+    border-radius: 18px;
 }
