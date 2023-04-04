@@ -1,8 +1,8 @@
 ---
 primary : blue
 secondary : black
-primary : green
-primary : yellow
-primary : red
+success : green
+warning : yellow
+danger : red
 
 ---
