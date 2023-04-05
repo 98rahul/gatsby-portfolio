@@ -1,8 +1,15 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import * as styles from "../styles/home.module.css";
+import Profile from "../components/Profile";
+import Introduction from "../components/Introduction";
+import AboutMe from "../components/AboutMe";
+import Services from "../components/Services";
+import MySkills from "../components/MySkills";
+import { ContactMe } from "../components/ContactMe";
+import RightSidebar from "../components/RightSidebar";
 
 export default function Home(props) {
   console.log(props);
@@ -11,21 +18,29 @@ export default function Home(props) {
   // const image = getImage(file);
   return (
     <Layout>
-      <section className={styles.header}>
-        <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer based in Manchester.</p>
-          <Link className={styles.btn} to="/project">
+      <div className={styles.profile}>
+        <Profile />
+        {/* <Link className={styles.btn} to="/project">
             My Portfolio Projects
-          </Link>
-        </div>
+          </Link> */}
+      </div>
+      <section className={styles.header}>
+        <div></div>
         {/* <img src="/banner.png" alt="banner" style={{ maxWidth: "100%" }} /> */}
-        <GatsbyImage image={getImage(file)} alt="heoo" />
-        <p>
+        <div className={styles.completePage}>
+          <Introduction />
+          <AboutMe />
+          <Services />
+          <MySkills />
+          <ContactMe />
+        </div>
+        <div></div>
+        {/* <GatsbyImage image={getImage(file)} alt="heoo" /> */}
+        {/* <p>
           {site.siteMetadata.title}-{site.siteMetadata.description}
-        </p>
+        </p> */}
       </section>
+      <RightSidebar />
     </Layout>
   );
 }
@@ -39,7 +54,7 @@ export const query = graphql`
       }
     }
 
-    file(relativePath: {eq: "banner.png"}) {
+    file(relativePath: { eq: "banner.png" }) {
       childImageSharp {
         gatsbyImageData(aspectRatio: 1.36, placeholder: BLURRED)
         id

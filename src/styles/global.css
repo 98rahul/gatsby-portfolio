@@ -14,16 +14,22 @@
   text-decoration: none;
   font-family: "Montserrat";
   color: white;
-  font-family:'Poopins',sans-serif;
+  font-family: 'Poopins', sans-serif;
 }
-html, body {
+
+html,
+body {
   min-height: 100%;
 }
+
 body {
-  background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
+  /* background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%); */
+  /* background-color: #D0DAE0; */
+  background-color: #242B2E;
   /* background: radial-gradient(at top left,#FCFCFB   0%, #8A2EFF 100%); */
   background-repeat: no-repeat;
 }
+
 p {
   margin: 16px auto;
   line-height: 1.5em;
@@ -31,30 +37,47 @@ p {
 
 /* layout & nav */
 .layout {
-  max-width: 100%;
-  margin: 0 auto;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
 }
+
 nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  box-shadow: 0 2px 5px #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 40px auto;
-  padding: 0 5rem;
+  padding: 2rem 5rem;
 }
+
 nav .links {
   display: inline-block;
   text-align: right;
 }
+
 nav a {
   display: inline-block;
   margin-left: 20px;
   font-weight: 400;
+  
+  padding-left: 5px;
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
 }
+
 nav a:hover {
   border-color: white;
 }
-footer p{
+
+.content {
+  height: 80%;
+  /* background-color: aqua; */
+}
+
+.footer p {
   text-align: center;
   color: #bbb;
   margin: 40px auto;

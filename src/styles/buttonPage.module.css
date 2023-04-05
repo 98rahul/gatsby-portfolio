@@ -9,8 +9,8 @@
     width: 600px;
     margin: 0 auto;
     height: 550px;
-    background-color: #D0DAE0;
-    /* background: radial-gradient(#D0DAE0   0%, #8A2EFF ); */
+    /* background-color: #D0DAE0; */
+    background: radial-gradient(#D0DAE0   0%, #8A2EFF );
     background-repeat: no-repeat;
     border-radius: 4PX;
     box-shadow: 2PX 2PX 5PX 4PX #8A2EFF,

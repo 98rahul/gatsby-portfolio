@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import '../styles/global.css'
+import Footer from './Footer'
 const Layout = ({children}) => {
   return (
     <div className="layout" >
@@ -8,9 +9,7 @@ const Layout = ({children}) => {
       <div className="content">
         { children }
       </div>
-      <footer>
-        <p>Copyright 2021 Web Warrior</p>
-      </footer>
+     <Footer />
     </div>
   )
 }
