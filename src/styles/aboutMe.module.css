@@ -11,14 +11,14 @@
 }
 
 .aboutMe {
-margin-top: 1.3rem;
+    margin-top: 1.3vw;
     display: flex;
     flex-direction: column;
 
 }
 
 .aboutMe span {
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 600;
     margin: 10px 0;
 }

@@ -21,7 +21,7 @@
 
 .heading .first,
 .heading .second {
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 500;
     letter-spacing: .6px;
 
@@ -30,7 +30,7 @@
 
 .heading .third {
     margin-top: 15px;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .number {
@@ -38,6 +38,12 @@
    
     grid-template-columns: 1fr 1fr 3fr;
     gap: 20px
+}
+@media screen and (max-width:500px) {
+    .number{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .number .one , .two {
@@ -48,7 +54,7 @@
 }
 .one  .twoPLus, .two .twoPLus{
     color:aqua;
-    font-size: 2.3rem;
+    font-size: clamp(16px ,1,6vw, 30px)
 }
 .number .two {}
 

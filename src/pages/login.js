@@ -48,8 +48,8 @@ const Login = () => {
             onChange={(e) => handleInput("name", e.target.value)}
           />
         </div>
-        <div className={styles.form}>
-          <label style={{ margin: "3px 0" }} className={styles.showNameInput}>
+        <form className={styles.form}>
+          <label style={{ margin: "3px 0" }}>
             Password
           </label>
           <input
@@ -62,7 +62,7 @@ const Login = () => {
             onChange={(e) => handleInput("password", e.target.value)}
             // onBlur={() => handleBlur("password")}
           />
-        </div>
+        </form>
         <span style={{ margin: "9px 0" }}>Forgot Password</span>
         <div className={styles.bottom}>
           <input type="submit" className={styles.btn} />

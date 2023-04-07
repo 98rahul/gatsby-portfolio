@@ -1,0 +1,62 @@
+.container {
+    height: fit-content;
+    padding: 10px;
+}
+
+.introBtn {
+
+    width: 200px;
+
+}
+
+.aboutMe {
+margin-top: 1.3vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aboutMe span {
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    margin-top: 2vw;
+   
+   
+}
+
+@media screen and (max-width:500px) {
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+}
+.card span{
+    margin-top: 10px;
+}
+
+.card .title{
+    color: #ffc107;
+   font-size:  clamp(16px, 2vw,30px);
+}
+.card:hover .title{
+    color: #ffc107b5;
+}
+.card:hover {
+    transition: 0.3s;
+    box-shadow: 1px 1px 10px 1px #3e3e, -1px -1px 10px 1px #3e3e;
+}

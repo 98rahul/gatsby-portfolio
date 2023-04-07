@@ -1,7 +1,8 @@
 import React from "react";
-import Button from "../components/Button";
 import Layout from "../components/Layout";
+import Button from "../components/Button";
 import * as styles from "../styles/buttonPage.module.css";
+
 const btnList = [
   { title: "Standard", id: "3", outline: false, rounded: false },
   { title: "Rounded", id: "3", outline: false, rounded: false },

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
@@ -6,18 +6,25 @@ import * as styles from "../styles/home.module.css";
 import Profile from "../components/Profile";
 import Introduction from "../components/Introduction";
 import AboutMe from "../components/AboutMe";
-import Services from "../components/Services";
+import Services from "../components/MyServices";
 import MySkills from "../components/MySkills";
 import { ContactMe } from "../components/ContactMe";
 import RightSidebar from "../components/RightSidebar";
 
 export default function Home(props) {
+  const [theme, setTheme] = useState(false);
+  const switchTheme = (bool) => {
+    setTheme(bool);
+  };
+
+
+  console.log("switch", theme);
   console.log(props);
   // const { title, description } = props.data.site.siteMetadata;
   const { site, file } = props.data;
   // const image = getImage(file);
   return (
-    <Layout>
+    <Layout theme={theme} switchTheme={switchTheme}>
       <div className={styles.profile}>
         <Profile />
         {/* <Link className={styles.btn} to="/project">

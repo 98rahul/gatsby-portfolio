@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
-const Navbar = () => {
-  // query site added here query should not be same 
+const Navbar = ({ switchTheme, theme }) => {
+  // query site added here query should not be same
   const data = useStaticQuery(graphql`
-    query site  { 
+    query site {
       site {
         siteMetadata {
           title
@@ -11,8 +11,11 @@ const Navbar = () => {
       }
     }
   `);
-  const {title} = data.site.siteMetadata
-  console.log(data)
+  const { title } = data.site.siteMetadata;
+  console.log(data);
+  const changeTheme = () => {
+    switchTheme(!theme);
+  };
   return (
     <nav>
       <h1>{title} </h1>
@@ -21,6 +24,12 @@ const Navbar = () => {
         <Link to="/about">About</Link>
         <Link to="/project">Portfolio Projects</Link>
         <Link to="/button">Button List</Link>
+        <span
+          style={{ marginLeft: "14px", cursor: "pointer" }}
+          onClick={changeTheme}
+        >
+          Theme
+        </span>
       </div>
     </nav>
   );
