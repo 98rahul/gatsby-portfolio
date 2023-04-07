@@ -21,11 +21,11 @@ const Introduction = () => {
       <div className={styles.number}>
         <div className={styles.one}>
           <span className={styles.twoPLus}>2+</span>
-          <span>YEARS OF EXPERIENCE</span>
+          <span className={styles.common}>YEARS OF EXPERIENCE</span>
         </div>
         <div className={styles.two}>
           <span className={styles.twoPLus}>10+</span>
-          <span>Projects<br/>Completed</span>
+          <span className={styles.common}>Projects<br/>Completed</span>
         </div>
         <div className={styles.three}>
           <span>My Projects</span>

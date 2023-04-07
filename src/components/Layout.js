@@ -8,7 +8,7 @@ const Layout = ({ children, theme = false, switchTheme }) => {
     <div className={ `${theme} :'layout ol' ? ' layout pp'`}>
       <Navbar theme={theme} switchTheme={switchTheme} />
       <div className="content">{children}</div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

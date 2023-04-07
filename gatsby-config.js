@@ -44,6 +44,15 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `frontend`,
+        // Path to the directory
+        path: `${__dirname}/src/images/frontend/png`,
+      },
+    },
   ], 
   siteMetadata:{
     title:'My First portfolio project',

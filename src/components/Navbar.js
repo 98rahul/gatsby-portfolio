@@ -17,7 +17,7 @@ const Navbar = ({ switchTheme, theme }) => {
     switchTheme(!theme);
   };
   return (
-    <nav>
+    <nav style={{zIndex:100}}>
       <h1>{title} </h1>
       <div className="links">
         <Link to="/">Home</Link>

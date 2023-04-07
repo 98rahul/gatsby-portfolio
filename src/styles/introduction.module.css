@@ -4,9 +4,9 @@
 }
 
 .introBtn {
- 
-    width:200px;
-   
+
+    width: 200px;
+
 }
 
 .introBtn span {
@@ -35,27 +35,38 @@
 
 .number {
     display: grid;
-   
+
     grid-template-columns: 1fr 1fr 3fr;
     gap: 20px
 }
+
 @media screen and (max-width:500px) {
-    .number{
+    .number {
         display: flex;
         flex-direction: column;
     }
 }
 
-.number .one , .two {
+.number .one,
+.two {
     display: flex;
     flex-direction: column;
     padding-left: 5px;
-   
+
 }
-.one  .twoPLus, .two .twoPLus{
-    color:aqua;
-    font-size: clamp(16px ,1,6vw, 30px)
+
+.one .twoPLus,
+.two .twoPLus {
+    margin: 5px 0;
+    color: aqua;
+    font-size: clamp(16px, 1.6vw, 32px)
 }
+
+.common {
+    font-size: clamp(12px, 1vw, 26px);
+    letter-spacing: 0.6px;
+}
+
 .number .two {}
 
 .number .three {

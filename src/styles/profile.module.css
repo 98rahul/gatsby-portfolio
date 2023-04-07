@@ -18,16 +18,17 @@
     font-weight: 700;
     color: aqua;
     /* font-size: 2rem; */
-    font-size: clamp(14px,2vw,3rem);
+    font-size: clamp(14px, 2vw, 3rem);
 }
 
 .heading .jobDesc {
-    font-weight: 500;    
+    font-weight: 500;
     display: flex;
     flex-direction: column;
 }
-.jobDesc span{
-    font-size: clamp(12px,1vw, 2rem,);
+
+.jobDesc span {
+    font-size: clamp(12px, 1vw, 2rem, );
 }
 
 .imgBox {
@@ -73,7 +74,31 @@ button {
     padding: 10px 0;
     color: #000;
     font-weight: 700;
-    border:none;
-    font-size: clamp(16px,1.3vw,3rem);
+    border: none;
+    font-size: clamp(16px, 1.3vw, 3rem);
     border-radius: 10px;
+}
+
+.facebook:hover,
+.whatsApp:hover,
+.linkdin:hover,
+.github:hover {
+    border-color: aqua;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.facebook svg,
+.whatsApp svg,
+.linkdin svg,
+.github svg {
+    fill: #fff
+}
+
+.facebook:hover svg,
+.whatsApp:hover svg,
+.linkdin:hover svg,
+.github:hover svg {
+    fill: aqua;
+    transition: .3s;
 }
