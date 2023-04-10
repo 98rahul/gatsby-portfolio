@@ -1,9 +1,9 @@
 .container {
-    /* background-color: aqua; */
+    /* background-color: red; */
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    padding: 2vw 0;
     align-items: center;
 }
 
@@ -53,16 +53,18 @@
 }
 
 .socialMedia {
-    width: 80%;
-    margin: 20px 0;
+    /* background-color: red; */
+    width: 85%;
+    padding: 0 13px;
+    margin: 30px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .socialMedia span {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     border: 1px solid #d5d5d5;
     border-radius: 100%;
     padding: 5px;
@@ -70,7 +72,7 @@
 
 button {
     background-color: aqua;
-    width: 70%;
+    width: 85%;
     padding: 10px 0;
     color: #000;
     font-weight: 700;
@@ -81,6 +83,7 @@ button {
 
 .facebook:hover,
 .whatsApp:hover,
+.email:hover,
 .linkdin:hover,
 .github:hover {
     border-color: aqua;
@@ -90,6 +93,7 @@ button {
 
 .facebook svg,
 .whatsApp svg,
+.email svg,
 .linkdin svg,
 .github svg {
     fill: #fff
@@ -98,6 +102,7 @@ button {
 .facebook:hover svg,
 .whatsApp:hover svg,
 .linkdin:hover svg,
+.email:hover svg,
 .github:hover svg {
     fill: aqua;
     transition: .3s;

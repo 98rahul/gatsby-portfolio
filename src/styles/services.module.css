@@ -10,7 +10,7 @@
 }
 
 .aboutMe {
-margin-top: 1.3vw;
+    margin-top: 1.3vw;
     display: flex;
     flex-direction: column;
 
@@ -22,40 +22,44 @@ margin-top: 1.3vw;
     margin: 10px 0;
 }
 
-.cardContainer{
+.cardContainer {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2vw;
     margin-top: 2vw;
-   
-   
+
+
 }
 
 @media screen and (max-width:500px) {
-    .cardContainer{
+    .cardContainer {
         display: flex;
         flex-direction: column;
     }
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     border: 1px solid whitesmoke;
     padding: 15px;
     border-radius: 10px;
 }
-.card span{
+
+.card span {
     margin-top: 10px;
 }
 
-.card .title{
+.card .title {
     color: #ffc107;
-   font-size:  clamp(16px, 2vw,30px);
+    font-size: clamp(16px, 2vw, 30px);
 }
-.card:hover .title{
+
+.card:hover .title {
     color: #ffc107b5;
 }
+
 .card:hover {
     transition: 0.3s;
     box-shadow: 1px 1px 10px 1px #3e3e, -1px -1px 10px 1px #3e3e;

@@ -1,5 +1,75 @@
-.rightSidebar{
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: start;
+  border: 1px solid #eee;
+  padding: 15px 10px;
+  border-radius: 10px;
   position: fixed;
-  right:5%;
-  top:20%;
+  right: 5%;
+  top: 20%;
+  background: transparent;
+  /* background-color: red; */
+  /* position: relative; */
+}
+
+.rightSidebar div {
+  margin: 5px 0;
+  cursor: pointer;
+  /* background-color: red; */
+  padding: 4px 8px;
+  width: 70px;
+}
+
+.Home,
+.About,
+.Services,
+.Skills,
+.Projects,
+.Contacts,
+.Resume,
+.Activity {
+  position: relative;
+}
+
+.Home1,
+.About1,
+.Services1,
+.Skills1,
+.Projects1,
+.Contacts1,
+.Resume1,
+.Activity1 {
+  display: none;
+}
+
+
+.Home:hover .Home1,
+.About:hover .About1,
+.Services:hover .Services1,
+.Skills:hover .Skills1,
+.Projects:hover .Projects1,
+.Contacts:hover .Contacts1,
+.Resume:hover .Resume1,
+.Activity:hover .Activity1 {
+  color: #eee;
+  background-color: rgba(30, 30, 30,0.9);
+  width: 80px;
+  font-size: 14px;
+ justify-content: flex-start;
+  padding: 4px 4px 4px 6px;
+  /* padding-left: 4px; */
+  text-align: center;
+  clip-path: polygon(0% 0%, 88% 1%, 100% 50%, 88% 99%, 0% 100%);
+  display: flex;
+  /* content: var(--val); */
+  position: absolute;
+  /* left: -50px;
+  top: -20px; */
+  top: -20px;
+  /* left:-70px; */
+  left: -80px;
+  transition: 0.3s;
+  /* top: calc(var(--id)*10px); */
 }

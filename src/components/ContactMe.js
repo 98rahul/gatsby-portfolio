@@ -128,7 +128,7 @@ export const ContactMe = () => {
     }
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='email'>
       <div className={styles.introBtn}>
         <Button title="icon contact me" type="success" outline rounded />
       </div>

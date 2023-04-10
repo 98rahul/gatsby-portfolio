@@ -37,7 +37,9 @@
 .cardAll {
     display: flex;
     
-    /* display: grid;
+    /* 
+    width:100%;// must to add while using the grid
+    display: grid;
     grid-auto-flow: column; */
 
     justify-content: start;
@@ -59,7 +61,8 @@
 .box {
     /* background-color: #eee; */
     height: 144px;
-    width: 96px;
+    /* width: 96px; */
+    min-width:100px;
     border-radius: 10px;
     border: 1px solid #eee;
     display: flex;

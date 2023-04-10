@@ -34,7 +34,9 @@ const Profile = () => {
         </span>
         <span
           className={styles.linkdin}
-          onClick={() => window.open("https://www.linkedin.com/in/rahulmoh-98-63-51-ode/")}
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/rahulmoh-98-63-51-ode/")
+          }
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +50,11 @@ const Profile = () => {
         </span>
         <span
           className={styles.facebook}
-          onClick={() => window.open("https://www.facebook.com/profile.php?id=100009497116839")}
+          onClick={() =>
+            window.open(
+              "https://www.facebook.com/profile.php?id=100009497116839"
+            )
+          }
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +67,11 @@ const Profile = () => {
         </span>
         <span
           className={styles.whatsApp}
-          onClick={() => window.open("https://api.whatsapp.com/send/?phone=9470284513&text&type=phone_number&app_absent=0")}
+          onClick={() =>
+            window.open(
+              "https://api.whatsapp.com/send/?phone=9470284513&text&type=phone_number&app_absent=0"
+            )
+          }
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,6 +84,21 @@ const Profile = () => {
               d="M24.504 7.504A11.875 11.875 0 0 0 16.05 4C9.465 4 4.1 9.36 4.1 15.945a11.882 11.882 0 0 0 1.594 5.973L4 28.109l6.336-1.664a11.958 11.958 0 0 0 5.71 1.457h.005c6.586 0 11.945-5.359 11.949-11.949c0-3.191-1.242-6.191-3.496-8.45zM16.05 25.883h-.004a9.93 9.93 0 0 1-5.055-1.383l-.363-.215l-3.762.985l1.004-3.665l-.234-.375a9.904 9.904 0 0 1-1.52-5.285c0-5.472 4.457-9.925 9.938-9.925a9.863 9.863 0 0 1 7.02 2.91a9.875 9.875 0 0 1 2.905 7.023c0 5.477-4.457 9.93-9.93 9.93zm5.445-7.438c-.297-.148-1.766-.87-2.039-.968c-.273-.102-.473-.149-.672.148c-.2.3-.77.973-.945 1.172c-.172.195-.348.223-.645.074c-.3-.148-1.261-.465-2.402-1.484c-.887-.79-1.488-1.77-1.66-2.067c-.176-.3-.02-.46.129-.61c.136-.132.3-.347.449-.523c.148-.171.2-.296.3-.496c.098-.199.048-.375-.027-.523c-.074-.148-.671-1.621-.921-2.219c-.243-.582-.489-.5-.672-.511c-.172-.008-.371-.008-.57-.008c-.2 0-.524.074-.798.375c-.273.297-1.043 1.02-1.043 2.488c0 1.469 1.07 2.89 1.22 3.09c.148.195 2.105 3.21 5.1 4.504a16.85 16.85 0 0 0 1.7.629c.715.226 1.367.195 1.883.12c.574-.085 1.765-.722 2.015-1.421c.247-.695.247-1.293.172-1.418c-.074-.125-.273-.2-.574-.352z"
             />
           </svg>
+        </span>
+        <span
+          className={styles.email}
+          // onClick={() => window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new")}
+        >
+          <a href="#email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M22 8.98V18c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h10.1c-.06.32-.1.66-.1 1c0 1.48.65 2.79 1.67 3.71L12 11L4 6v2l8 5l5.3-3.32c.54.2 1.1.32 1.7.32c1.13 0 2.16-.39 3-1.02zM16 5c0 1.66 1.34 3 3 3s3-1.34 3-3s-1.34-3-3-3s-3 1.34-3 3z" />
+            </svg>
+          </a>
         </span>
       </div>
       <button>Hire Me</button>

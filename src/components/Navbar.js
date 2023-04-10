@@ -21,7 +21,8 @@ const Navbar = ({ switchTheme, theme }) => {
       <h1>{title} </h1>
       <div className="links">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        {/* <Link to="/about">About</Link> */}
+        <Link to="/#about">About</Link>
         <Link to="/project">Portfolio Projects</Link>
         <Link to="/button">Button List</Link>
         <span
