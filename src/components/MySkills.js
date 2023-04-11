@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import * as styles from "../styles/mySkills.module.css";
 // import { StaticImage } from "gatsby-plugin-image";
+import { SVG } from "../svg";
 
 import img from "../images/frontend/png/index";
 const frontendArr = [
@@ -33,7 +34,7 @@ const MySkills = () => {
   return (
     <div className={styles.container}>
       <div className={styles.introBtn}>
-        <Button title="icon My skills" type="danger" outline rounded />
+        <Button title="My skills" type="danger" outline rounded svg={SVG.skills} />
       </div>
       <div className={styles.aboutMe}>
         <span>

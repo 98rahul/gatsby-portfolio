@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "./Button";
+import { SVG } from "../svg";
 import * as styles from "../styles/aboutMe.module.css";
 const AboutMe = () => {
   return (
     <div className={styles.container}>
       <div className={styles.introBtn}>
-        <Button title="icon About Me" type="success" outline rounded />
+        <Button title="About Me" type="success" outline rounded svg={SVG.about} />
       </div>
       <div className={styles.aboutMe}>
         <span>Every great design start with </span>

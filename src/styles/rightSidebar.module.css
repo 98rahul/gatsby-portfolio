@@ -4,7 +4,7 @@
   box-sizing: border-box;
   align-items: start;
   border: 1px solid #eee;
-  padding: 15px 10px;
+  padding:  10px;
   border-radius: 10px;
   position: fixed;
   right: 5%;
@@ -15,7 +15,7 @@
 }
 
 .rightSidebar div {
-  margin: 5px 0;
+  margin: 3px 0;
   cursor: pointer;
   /* background-color: red; */
   padding: 4px 8px;
@@ -54,10 +54,10 @@
 .Resume:hover .Resume1,
 .Activity:hover .Activity1 {
   color: #eee;
-  background-color: rgba(30, 30, 30,0.9);
+  background-color: rgba(30, 30, 30, 0.9);
   width: 80px;
   font-size: 14px;
- justify-content: flex-start;
+  justify-content: flex-start;
   padding: 4px 4px 4px 6px;
   /* padding-left: 4px; */
   text-align: center;
@@ -67,9 +67,28 @@
   position: absolute;
   /* left: -50px;
   top: -20px; */
-  top: -20px;
+  top: -15px;
   /* left:-70px; */
   left: -80px;
   transition: 0.3s;
+  color:aqua
   /* top: calc(var(--id)*10px); */
+}
+
+.Home:hover svg,
+.About:hover svg,
+.Services:hover svg,
+.Skills:hover svg,
+.Projects:hover svg,
+.Contacts:hover svg,
+.Resume:hover svg,
+.Activity:hover svg{
+  fill:aqua
+}
+
+@media screen and (max-width:700px) {
+  .rightSidebar{
+      display: none;
+  }
+  
 }

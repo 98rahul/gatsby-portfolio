@@ -26,7 +26,7 @@ const Navbar = ({ switchTheme, theme }) => {
         <Link to="/project">Portfolio Projects</Link>
         <Link to="/button">Button List</Link>
         <span
-          style={{ marginLeft: "14px", cursor: "pointer" }}
+          style={{ marginLeft: "14px", cursor: "pointer" ,display:'none'}}
           onClick={changeTheme}
         >
           Theme

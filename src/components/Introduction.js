@@ -1,11 +1,12 @@
 import React from "react";
 import * as styles from "../styles/introduction.module.css";
 import Button from "./Button";
+import { SVG } from "../svg";
 const Introduction = () => {
   return (
     <div className={styles.container}>
       <div className={styles.introBtn}>
-       <Button title='home Introduction ' type='dark' outline rounded />
+       <Button title='Introduction ' type='dark' outline rounded svg={SVG.home}/>
       </div>
       
       <div className={styles.heading}>
@@ -20,7 +21,7 @@ const Introduction = () => {
       </div>
       <div className={styles.number}>
         <div className={styles.one}>
-          <span className={styles.twoPLus}>2+</span>
+          <span className={styles.twoPLus}>1.5+</span>
           <span className={styles.common}>YEARS OF EXPERIENCE</span>
         </div>
         <div className={styles.two}>

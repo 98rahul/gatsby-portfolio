@@ -8,11 +8,11 @@
 }
 
 .header h2 {
-  font-size: 4vw;
+  font-size:clamp(16px,4vw,10vw);
 }
 
 .header h3 {
-  font-size: 3vw;
+  font-size:clamp(14px,3vw,10vw);
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -34,13 +34,24 @@
   top: 15%;
   left: 2%;
   width: 23%;
-
   height: 70%;
 }
 
 @media screen and (max-width:700px) {
   .profile{
       display: none;
+  }
+  
+}
+@media screen and (max-width:700px) {
+  .header{
+      margin-top:4vh;
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .header{
+      margin-top:10vh;
   }
   
 }

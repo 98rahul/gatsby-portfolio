@@ -55,7 +55,7 @@ module.exports = {
     },
   ], 
   siteMetadata:{
-    title:'My First portfolio project',
+    title:'My  Portfolio ',
     description:'Hope in future will deliver more project!'
   }
 }

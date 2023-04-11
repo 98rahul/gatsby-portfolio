@@ -7,9 +7,17 @@
     color: #000;
     font-weight: 500;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
  
 }
-
+.btn  svg {
+    margin-right: 5px;
+}
+.btn:hover svg{
+    fill:rgb(5, 76, 76)
+} 
 .plain {
     border: 1px solid #f8f9fa;
     border:1px solid #f8f9fa;

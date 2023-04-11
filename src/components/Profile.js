@@ -1,7 +1,9 @@
 import React from "react";
 import * as styles from "../styles/profile.module.css";
-
-const Profile = () => {
+import { graphql } from "gatsby";
+import dp from '../images/rahulDp.jpeg'
+const Profile = (props) => {
+  console.log('img--',props)
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
@@ -11,7 +13,9 @@ const Profile = () => {
           <span>Web-Developer </span>
         </div>
       </div>
-      <div className={styles.imgBox}>Image box</div>
+      <div className={styles.imgBox}>
+        <img src={dp} alt="rahul-dp" style={{height:'12vw',width:'12vw',objectFit:'cover',borderRadius: '50%' }} />
+      </div>
       <div className={styles.contact}>
         <span>17755nith@gmail.com</span>
         <span>Delhi,India</span>
@@ -107,3 +111,13 @@ const Profile = () => {
 };
 
 export default Profile;
+
+export const Imgquery = graphql`
+  query qry {
+    file(relativePath: { eq: "rahulDp.jpeg" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+  }
+`;

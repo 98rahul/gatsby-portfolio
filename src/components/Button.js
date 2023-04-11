@@ -1,7 +1,8 @@
 import React from "react";
 import * as styles from "../styles/Button.module.css";
-const Button = ({ title, type, outline, rounded }) => {
-  console.log(title, type, outline, rounded);
+import { SVG } from "../svg";
+const Button = ({ title, type, outline, rounded ,svg=SVG.whatsApp}) => {
+  // console.log(title, type, outline, rounded);
   return (
     <div
       className={`${styles["btn"]} ${styles[type]} ${
@@ -10,7 +11,7 @@ const Button = ({ title, type, outline, rounded }) => {
       ${outline && rounded ? `${styles.roundOutline}` : ""}
       `}
     >
-      {title}
+     {svg} {title}
       {/* <input value={title} readOnly /> */}
     </div>
   );

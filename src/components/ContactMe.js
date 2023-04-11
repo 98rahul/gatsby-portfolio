@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as styles from "../styles/contactMe.module.css";
 import * as emailJs from "emailjs-com";
-
+import { SVG } from "../svg";
 import Button from "./Button";
 let flag = false;
 export const ContactMe = () => {
@@ -130,7 +130,7 @@ export const ContactMe = () => {
   return (
     <div className={styles.container} id='email'>
       <div className={styles.introBtn}>
-        <Button title="icon contact me" type="success" outline rounded />
+        <Button title="contact me" type="success" outline rounded svg={SVG.contact} />
       </div>
       <div className={styles.aboutMe}>
         <span>

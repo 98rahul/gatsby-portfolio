@@ -1,7 +1,7 @@
 import React from "react";
 import * as styles from "../styles/Services.module.css";
 import Button from "./Button";
-
+import { SVG } from "../svg";
 const arrContainer = [
   {
     icon: "icon",
@@ -25,7 +25,7 @@ const MySkills = () => {
   return (
     <div className={styles.container}>
       <div className={styles.introBtn}>
-        <Button title="icon Services" type="danger" outline rounded />
+        <Button title="Services" type="danger" outline rounded svg={SVG.services} />
       </div>
       <div className={styles.aboutMe}>
         <span>
