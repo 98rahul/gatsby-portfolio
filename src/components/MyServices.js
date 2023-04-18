@@ -4,18 +4,18 @@ import Button from "./Button";
 import { SVG } from "../svg";
 const arrContainer = [
   {
-    icon: "icon",
+    icon:SVG.frontend,
     title: "Frontend Web Development",
     desc: "I can convert any psd or Figma file into mobile or tab responsive web application. Capable of doing project in clean code.",
   },
 
   {
-    icon: "icon",
+    icon: SVG.react,
     title: "React JS Development",
     desc: "I have worked on 8 different React JS projcts. Also have a little working experience with Next JS.",
   },
   {
-    icon: "icon",
+    icon: SVG.fullstack,
     title: "Full Stack Development",
     desc: "With the Frontend I am skilled in Node JS, Express, JWT and Firebase. Proficient in implementing Mongo DB.",
   },
@@ -23,9 +23,15 @@ const arrContainer = [
 
 const MySkills = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Services">
       <div className={styles.introBtn}>
-        <Button title="Services" type="danger" outline rounded svg={SVG.services} />
+        <Button
+          title="Services"
+          type="danger"
+          outline
+          rounded
+          svg={SVG.services}
+        />
       </div>
       <div className={styles.aboutMe}>
         <span>
@@ -49,11 +55,11 @@ const MySkills = () => {
   );
 };
 
-const Card = ({icon = "icon", title = "title", desc = "desc"}) => {
+const Card = ({ icon = "icon", title = "title", desc = "desc" }) => {
   // console.log(icon, title, desc);
   return (
     <div className={styles.card}>
-      <span>{icon}</span>
+      <span className={styles.targetSvg}>{icon}</span>
       <span className={styles.title}>{title}</span>
       <span>{desc}</span>
     </div>

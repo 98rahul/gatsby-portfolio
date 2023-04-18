@@ -4,7 +4,7 @@ import { SVG } from "../svg";
 import * as styles from "../styles/aboutMe.module.css";
 const AboutMe = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='About'>
       <div className={styles.introBtn}>
         <Button title="About Me" type="success" outline rounded svg={SVG.about} />
       </div>

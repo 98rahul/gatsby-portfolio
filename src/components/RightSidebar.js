@@ -164,7 +164,7 @@ const RightSidebar = () => {
   return (
     <div className={styles.rightSidebar}>
       {menuList.map((elem, id) => (
-        <div className={`${styles[`${elem.desc}`]}  `}>
+        <a className={`${styles[`${elem.desc}`]}  `} href={`#${elem.desc}`} style={{padding:'4px 0'}} >
           {elem.icon}
           <p
             className={`${styles[`${elem.desc}1`]}`}
@@ -172,7 +172,7 @@ const RightSidebar = () => {
           >
             {elem.desc}
           </p>
-        </div>
+        </a>
       ))}
     </div>
   );

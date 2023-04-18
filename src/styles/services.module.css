@@ -64,3 +64,7 @@
     transition: 0.3s;
     box-shadow: 1px 1px 10px 1px #3e3e, -1px -1px 10px 1px #3e3e;
 }
+.targetSvg svg{
+    height: 50px;
+    width: 50px;
+}

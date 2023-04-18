@@ -29,11 +29,20 @@
     flex-direction: column;
     /* background: red; */
 }
-
-.cardHeading span {
-    margin: 5px 0;
+.cardHeading{
+    display: flex;
+    align-items: center; 
 }
 
+.cardHeading span {
+    margin: 3px ;
+}
+.cardHeading:hover span ,
+.cardHeading:hover svg{
+    color: aqua;
+    fill:aqua;
+    transition: 0.3s;
+}
 .cardAll {
     display: flex;
     

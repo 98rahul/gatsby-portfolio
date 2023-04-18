@@ -32,7 +32,7 @@ const databaseArr = [
 
 const MySkills = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Skills">
       <div className={styles.introBtn}>
         <Button title="My skills" type="danger" outline rounded svg={SVG.skills} />
       </div>
@@ -44,7 +44,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>icon</span>
+          <span>{SVG.frontend}</span>
           <span>Frontend</span>
         </div>
         <div className={styles.cardAll}>
@@ -55,7 +55,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>icon</span>
+          <span>{SVG.backend}</span>
           <span>Backend</span>
         </div>
         <div className={styles.cardAll}>
@@ -66,7 +66,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>icon</span>
+          <span>{SVG.tools}</span>
           <span>Tools</span>
         </div>
         <div className={styles.cardAll}>
@@ -77,7 +77,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>icon</span>
+          <span>{SVG.database}</span>
           <span>Database</span>
         </div>
         <div className={styles.cardAll}>
@@ -100,6 +100,7 @@ const Card = ({ title, img }) => {
           height="56px"
           width="56px"
           style={{ objectFit: "contain" }}
+          alt="imag"
         />
       </div>
       {/* <StaticImage src={img} alt="A dinosaur" /> */}

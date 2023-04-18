@@ -4,7 +4,7 @@ import Button from "./Button";
 import { SVG } from "../svg";
 const Introduction = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='Home'>
       <div className={styles.introBtn}>
        <Button title='Introduction ' type='dark' outline rounded svg={SVG.home}/>
       </div>
