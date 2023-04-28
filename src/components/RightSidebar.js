@@ -156,7 +156,7 @@ const menuList = [
   { desc: "Skills", icon: svgList.skills },
   { desc: "Projects", icon: svgList.projects },
   { desc: "Contacts", icon: svgList.contact },
-  { desc: "Resume", icon: svgList.resume },
+  { desc: "Resume", icon: svgList.resume ,link:'https://drive.google.com/drive/folders/1mR_etzCBHD9_xU3yqdE1WQo7QeXKeDep?usp=share_link'},
   { desc: "Activity", icon: svgList.activity },
 ];
 
@@ -164,7 +164,10 @@ const RightSidebar = () => {
   return (
     <div className={styles.rightSidebar}>
       {menuList.map((elem, id) => (
-        <a className={`${styles[`${elem.desc}`]}  `} href={`#${elem.desc}`} style={{padding:'4px 0'}} >
+        <a className={`${styles[`${elem.desc}`]}  `} href={`#${elem.desc}`} style={{padding:'4px 0'}} 
+        onClick={() => {
+          elem.link &&  window.open(`${elem.link}`)}}
+        >
           {elem.icon}
           <p
             className={`${styles[`${elem.desc}1`]}`}
