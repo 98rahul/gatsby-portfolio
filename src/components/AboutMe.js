@@ -15,16 +15,18 @@ const AboutMe = () => {
         </span>
       </div>
       <div className={styles.desc}>
-        I started web programming not of self interest because of had no options but found out I enjoy
+        I started web programming out of self interest and found out I enjoy
         designing and developing web application. It gives me the enlightenment
         of creating something that I can own. For more than 1 year I have been
         learning web development. I have excelled in frontend development
-        technology and then backend as well.Now, I'm moving the next gen level called <b style={{color:'aqua'}}>Pyhton world</b> 
+        technology and then backend as well. I have worked on 12 different
+        projects of my own. I like to read books, go on tours and watch sci-fi
+        movies.
       </div>
-      {/* <div>
+      <div>
         <span>Icon</span>
         <span>Get My CV</span>
-      </div> */}
+      </div>
     </div>
   );
 };
