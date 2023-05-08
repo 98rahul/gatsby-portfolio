@@ -1,5 +1,5 @@
 .container {
-    height: 70vh;
+    height: 50vh;
     padding: 10px;
     /* background-color: rgba(255, 0, 0, 0.304); */
 }
@@ -26,6 +26,7 @@
 .desc {
     margin: 2rem 0;
     font-size: 1rem;
-    letter-spacing: .6px;
-    word-spacing: .3px;
+    letter-spacing: .4px;
+    word-spacing: .5px;
+    line-height: 1.4rem;
 }

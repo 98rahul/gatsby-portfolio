@@ -15,7 +15,7 @@ const Introduction = () => {
         </span>
         <span className={styles.second}> Full-Stack Web Developer</span>
         <span className={styles.third}>
-          I am a MERN Stack developer who loves to create dynamic and responsive
+          I am a MERN Stack developer who loves to customize the
           web applications.
         </span>
       </div>
@@ -25,13 +25,13 @@ const Introduction = () => {
           <span className={styles.common}>YEARS OF EXPERIENCE</span>
         </div>
         <div className={styles.two}>
-          <span className={styles.twoPLus}>10+</span>
+          <span className={styles.twoPLus}>Count++</span>
           <span className={styles.common}>Projects<br/>Completed</span>
         </div>
-        <div className={styles.three}>
+        {/* <div className={styles.three}>
           <span>My Projects</span>
           <span>down arrow</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

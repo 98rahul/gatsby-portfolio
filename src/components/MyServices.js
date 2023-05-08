@@ -17,7 +17,7 @@ const arrContainer = [
   {
     icon: SVG.fullstack,
     title: "Full Stack Development",
-    desc: "With the Frontend I am skilled in Node JS, Express, JWT and Firebase. Proficient in implementing Mongo DB.",
+    desc: "With the Frontend I am skilled in Node JS, Express, JWT and mySql.",
   },
 ];
 
@@ -61,7 +61,7 @@ const Card = ({ icon = "icon", title = "title", desc = "desc" }) => {
     <div className={styles.card}>
       <span className={styles.targetSvg}>{icon}</span>
       <span className={styles.title}>{title}</span>
-      <span>{desc}</span>
+      <span className={styles.desc}>{desc}</span>
     </div>
   );
 };
