@@ -105,7 +105,7 @@ const Profile = (props) => {
           </a>
         </span>
       </div>
-      <button>Hire Me</button>
+      <button style={{cursor:'pointer'}}>Hire Me</button>
     </div>
   );
 };
