@@ -1,12 +1,16 @@
 .header {
   padding: 0 20px;
-  width: 100%;
+  /* width: 100%; */
   display: grid;
   grid-template-columns: 2fr 4fr 1fr;
   grid-gap: 3vw;
-  align-items: center;
+  /* align-items: center; */
 }
-
+@media screen and (width<700px) {
+  .header{
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
 .header h2 {
   font-size:clamp(16px,4vw,10vw);
 }

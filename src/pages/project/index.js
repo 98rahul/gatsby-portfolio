@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../../components/Layout";
 import * as styles from "../../styles/project.module.css";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -9,8 +9,12 @@ const Project = (props) => {
   console.log("props", props);
   const { nodes: project } = props.data.allMarkdownRemark;
   console.log(project);
+  const [theme, setTheme] = useState(false);
+  const switchTheme = (bool) => {
+    setTheme(bool);
+  };
   return (
-    <Layout>
+    <Layout theme={theme} switchTheme={switchTheme}>
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I've Created</h3>
