@@ -91,7 +91,7 @@ const MySkills = () => {
 };
 
 const Card = ({ title, img }) => {
-  console.log(img);
+  // console.log(img);
   return (
     <div className={styles.card}>
       <div className={styles.box}>

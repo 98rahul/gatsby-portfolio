@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import * as styles from "../styles/buttonPage.module.css";
@@ -52,9 +52,13 @@ const btnList = [
 ];
 
 const Butoon = () => {
+  const [theme, setTheme] = useState(false);
+  const switchTheme = (bool) => {
+    setTheme(bool);
+  };
   return (
-    <Layout>
-      <div className={styles.btnGroup}>
+    <Layout theme={theme} switchTheme={switchTheme}>
+      <div className={styles.btnGroup} style={ {background: theme ? '#242B2E': 'hsl(250, 93%, 20%)'} }>
         {btnList.map((btn,idx) => {
            
           return <Button type={btn.id} title={btn.title} key={idx} outline={btn.outline} rounded={btn.rounded} />;

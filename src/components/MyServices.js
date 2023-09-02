@@ -15,6 +15,11 @@ const arrContainer = [
     desc: "I have worked on 8 different React JS projcts. Also have a little working experience with Next JS.",
   },
   {
+    icon: SVG.djangoIcon,
+    title: "Django",
+    desc: "I have knowledge of this framework created own simple project like CRM.",
+  },
+  {
     icon: SVG.fullstack,
     title: "Full Stack Development",
     desc: "With the Frontend I am skilled in Node JS, Express, JWT and mySql.",
@@ -55,8 +60,8 @@ const MySkills = () => {
   );
 };
 
-const Card = ({ icon = "icon", title = "title", desc = "desc" }) => {
-  // console.log(icon, title, desc);
+const Card = ({ icon = "icon", title = "title", desc = "desc",bg }) => {
+  // console.log(bg);
   return (
     <div className={styles.card}>
       <span className={styles.targetSvg}>{icon}</span>
