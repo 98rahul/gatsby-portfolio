@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 2fr 4fr 1fr;
   grid-gap: 3vw;
-  /* align-items: center; */
 }
 @media screen and (width<700px) {
   .header{

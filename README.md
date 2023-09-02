@@ -5,12 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Gatsby's portfolio
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+_visit this link(https://mellow-duckanoo-6a19cc.netlify.app/)._
 
 ## 🚀 Quick start
 
@@ -95,5 +93,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [Build, Deploy, and Host On Netlify](https://netlify.com)
 
 The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
+
+`Cool things have no dependency, for example, hovering effects. They're pure code; no packages were used.
+`
+
+![image](https://github.com/98rahul/gatsby-portfolio/assets/71221556/cdc46fd8-7734-4944-a679-cf32418ce88e)
+
 
 <!-- AUTO-GENERATED-CONTENT:END -->
