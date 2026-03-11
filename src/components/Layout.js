@@ -2,13 +2,13 @@ import React from "react";
 import Navbar from "./Navbar";
 import "../styles/global.css";
 import Footer from "./Footer";
+import { useThemeContext } from "../store/ThemeContext";
 const layout='layout'
-const Layout = ({ children, theme = false, switchTheme }) => {
-  console.log('props', switchTheme,theme)
-  const active = theme ? 'dark' : 'light'
+const Layout = ({ children }) => {
+  const { theme ,switchTheme} = useThemeContext()
   return (
-    <div className={` layout ${active}` }>
-      <Navbar theme={theme} switchTheme={switchTheme} />
+    <div className={` layout ${theme}` }>
+      <Navbar/>
       <div className="content">{children}</div>
       {/* <Footer /> */}
     </div>

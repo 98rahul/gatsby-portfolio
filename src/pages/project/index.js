@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 const Project = (props) => {
-  console.log("props", props);
+  console.log("props_props", props);
   const { nodes: project } = props.data.allMarkdownRemark;
   console.log(project);
   const [theme, setTheme] = useState(false);

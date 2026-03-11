@@ -1,20 +1,20 @@
 import React from "react";
 import * as styles from "../styles/profile.module.css";
 import { graphql } from "gatsby";
-import dp from '../images/rahulDp.jpeg'
+// import dp from '../images/rahulDp.jpeg'
+import dp from '../images/rahulNewDp.jpeg'
 const Profile = (props) => {
   console.log('img--',props)
   return (
-    <div className={styles.container}>
+    <div className={styles.profile_container}>
       <div className={styles.heading}>
         <span className={styles.name}>Rahul Raj</span>
         <div className={styles.jobDesc}>
-          <span>Full Stack </span>
-          <span>Web-Developer </span>
+          <span>Full Stack Developer</span>
         </div>
       </div>
       <div className={styles.imgBox}>
-        <img src={dp} alt="rahul-dp" style={{height:'12vw',width:'12vw',objectFit:'cover',borderRadius: '50%' }} />
+        <img src={dp} alt="rahul-dp" className={styles.img} />
       </div>
       <div className={styles.contact}>
         <span>17755nith@gmail.com</span>

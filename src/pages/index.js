@@ -10,11 +10,13 @@ import Services from "../components/MyServices";
 import MySkills from "../components/MySkills";
 import { ContactMe } from "../components/ContactMe";
 import RightSidebar from "../components/RightSidebar";
+import { ThemeProvider } from "../store/ThemeContext";
 
 export default function Home(props) {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState('dark'); //'dark' || 'light'
   const switchTheme = (bool) => {
-    setTheme(bool);
+    setTheme(theme == 'dark' ? 'light' : 'dark');
+    // setTheme(bool);
   };
 
 
@@ -24,31 +26,33 @@ export default function Home(props) {
   const { site, file } = props.data;
   // const image = getImage(file);
   return (
+    <ThemeProvider>
     <Layout theme={theme} switchTheme={switchTheme}>
-      <div className={styles.profile}>
-        <Profile />
-        {/* <Link className={styles.btn} to="/project">
-            My Portfolio Projects
-          </Link> */}
-      </div>
-      <section className={styles.header}>
-        <div></div>
-        {/* <img src="/banner.png" alt="banner" style={{ maxWidth: "100%" }} /> */}
-        <div className={styles.completePage}>
-          <Introduction />
-          <AboutMe />
-          <Services />
-          <MySkills />
-          <ContactMe />
-        </div>
-        <div></div>
-        {/* <GatsbyImage image={getImage(file)} alt="heoo" /> */}
-        {/* <p>
-          {site.siteMetadata.title}-{site.siteMetadata.description}
-        </p> */}
-      </section>
-      <RightSidebar />
+        <div className={styles.main_container}>
+          <div className={styles.profile_box}>
+            <Profile />
+          </div>
+          <section className={styles.content_box}>
+          <div></div>
+          {/* <img src="/banner.png" alt="banner" style={{ maxWidth: "100%" }} /> */}
+          <div className={styles.completePage}>
+            <Introduction />
+            <AboutMe />
+            <Services />
+            <MySkills />
+            <ContactMe />
+          </div>
+          <div></div>
+          {/* <GatsbyImage image={getImage(file)} alt="heoo" /> */}
+          {/* <p>
+            {site.siteMetadata.title}-{site.siteMetadata.description}
+          </p> */}
+          </section>
+          <RightSidebar />
+       </div>
     </Layout>
+
+    </ThemeProvider>
   );
 }
 
