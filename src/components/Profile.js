@@ -91,7 +91,7 @@ const Profile = (props) => {
         </span>
         <span
           className={styles.email}
-          // onClick={() => window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new")}
+          onClick={() => window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new")}
         >
           <a href="#email">
             <svg
@@ -105,7 +105,7 @@ const Profile = (props) => {
           </a>
         </span>
       </div>
-      <button style={{cursor:'pointer'}}>Hire Me</button>
+        <a className={styles.hireMe_btn} href="#Contacts" >Hire Me</a>
     </div>
   );
 };
