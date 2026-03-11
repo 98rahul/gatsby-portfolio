@@ -34,7 +34,7 @@ const MySkills = () => {
   return (
     <div className={styles.container} id="Skills">
       <div className={styles.introBtn}>
-        <Button title="My skills" type="danger" outline rounded svg={SVG.skills} />
+        <Button title="My skills"  type="dark" outline rounded svg={SVG.skills} />
       </div>
       <div className={styles.aboutMe}>
         <span>
@@ -44,7 +44,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>{SVG.frontend}</span>
+          <span className={styles.SVG}>{SVG.frontend}</span>
           <span>Frontend</span>
         </div>
         <div className={styles.cardAll}>
@@ -55,7 +55,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>{SVG.backend}</span>
+          <span className={styles.SVG}>{SVG.backend}</span>
           <span>Backend</span>
         </div>
         <div className={styles.cardAll}>
@@ -66,7 +66,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>{SVG.tools}</span>
+          <span className={styles.SVG}>{SVG.tools}</span>
           <span>Tools</span>
         </div>
         <div className={styles.cardAll}>
@@ -77,7 +77,7 @@ const MySkills = () => {
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.cardHeading}>
-          <span>{SVG.database}</span>
+          <span className={styles.SVG}>{SVG.database}</span>
           <span>Database</span>
         </div>
         <div className={styles.cardAll}>

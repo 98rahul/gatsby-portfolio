@@ -5,6 +5,7 @@
     max-width: inherit;
     width: 100%;
     margin: auto;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;

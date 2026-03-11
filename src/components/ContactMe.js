@@ -130,7 +130,7 @@ export const ContactMe = () => {
   return (
     <div className={styles.container} id='Contacts'>
       <div className={styles.introBtn}>
-        <Button title="contact me" type="success" outline rounded svg={SVG.contact} />
+        <Button title="contact me"  type="dark" outline rounded svg={SVG.contact} />
       </div>
       <div className={styles.aboutMe}>
         <span>

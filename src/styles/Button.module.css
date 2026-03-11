@@ -1,9 +1,9 @@
 .btn {
     box-sizing: border-box;
-    margin: 5px;
-    min-width: 22%;
+    /* margin: 5px; */
+    /* min-width: 22%; */
     text-align: center;
-    padding: 8px 0;
+    padding: 10px 14px;
     color: #000;
     font-weight: 500;
     cursor: pointer;
@@ -70,12 +70,12 @@
 }
 
 .rounded {
-    border-radius: 18px;
+    border-radius: 12px;
 
 }
 
 .outline {
-    border-width: 3px;
+    border-width: 2px;
     background-color: #fff !important;
     color: #000;
 
@@ -85,5 +85,5 @@
     background-color: #fff !important;
     color: #000;
     /* border: 1px solid; */
-    border-radius: 18px;
+    border-radius: 12px;
 }

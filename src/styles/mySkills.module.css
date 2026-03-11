@@ -6,12 +6,12 @@
 
 .introBtn {
 
-    width: 200px;
+    width: 160px;
 
 }
 
 .aboutMe {
-    margin-top: 1.3vw;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 
@@ -24,19 +24,24 @@
 }
 
 .cardContainer {
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     display: flex;
     flex-direction: column;
-    /* background: red; */
 }
 
 .cardHeading {
     display: flex;
     align-items: center;
+    gap: 10px;
+
+    & .SVG {
+        display: flex;
+    }
 }
 
 .cardHeading span {
-    margin: 3px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .cardHeading:hover span,

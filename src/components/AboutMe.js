@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div className={styles.container} id='About'>
       <div className={styles.introBtn}>
-        <Button title="About Me" type="success" outline rounded svg={SVG.about} />
+        <Button title="About Me" type="dark" outline rounded svg={SVG.about} />
       </div>
       <div className={styles.aboutMe}>
         <span>Every great design start with </span>

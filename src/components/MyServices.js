@@ -32,7 +32,7 @@ const MySkills = () => {
       <div className={styles.introBtn}>
         <Button
           title="Services"
-          type="danger"
+           type="dark"
           outline
           rounded
           svg={SVG.services}

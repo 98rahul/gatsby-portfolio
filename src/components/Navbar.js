@@ -28,11 +28,11 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <h1>{SVG.logo} </h1>
       <div className={styles.links}>
-        <Link to="/">Home</Link>
+        {/* <Link to="/">Home</Link> */}
         {/* <Link to="/about">About</Link> */}
         {/* <Link to="/#about">About</Link> */}
-        <Link to="/project">Portfolio Projects</Link>
-        <Link to="/button">Button List</Link>
+        {/* <Link to="/project">Portfolio Projects</Link>
+        <Link to="/button">Button List</Link> */}
 
         <span onClick={changeTheme} >
           {theme ? SVG.darkMode : SVG.lightMode}

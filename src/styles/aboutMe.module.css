@@ -4,13 +4,11 @@
 }
 
 .introBtn {
-
-    width: 200px;
-
+    width: 160px;
 }
 
 .aboutMe {
-    margin-top: 1.3vw;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
