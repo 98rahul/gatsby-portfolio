@@ -170,7 +170,7 @@ const RightSidebar = () => {
         >
           {elem.icon}
           <p
-            className={`${styles[`${elem.desc}1`]}`}
+            className={`${styles.tooltip} ${styles[`${elem.desc}1`]}`}
             style={{ "--id": `${id}`, "--val": `${elem.desc}` }}
           >
             {elem.desc}
