@@ -62,13 +62,17 @@
 }
 
 @media screen and (max-width:640px) {
+  .profile_box {
+    height: 470px !important;
+  }
+
   .main_container {
     width: 100%;
 
     & .profile_box {
       width: 100%;
       max-width: 540px;
-      height: 410px;
+      /* height: 410px; */
       margin: 0;
     }
   }

@@ -61,7 +61,7 @@
 
     justify-content: start;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 28px;
     margin: 20px 0;
 }
 
@@ -81,7 +81,7 @@
     /* width: 96px; */
     min-width: 100px;
     border-radius: 10px;
-    border: 1px solid #eee;
+    border: 1px solid #fffdff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,5 +89,11 @@
 
 .box:hover {
     transition: 0.3s;
-    box-shadow: 1px 1px 10px 1px #3e3e, -1px -1px 10px 1px #3e3e;
+    box-shadow: 1px 1px 6px 1px #fffdff, -1px -1px 6px 1px #fffdff;
+}
+
+@media screen and (max-width:767px) {
+    .cardAll {
+        gap: 24px;
+    }
 }

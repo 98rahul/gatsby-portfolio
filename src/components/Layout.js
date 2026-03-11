@@ -7,10 +7,12 @@ const layout='layout'
 const Layout = ({ children }) => {
   const { theme ,switchTheme} = useThemeContext()
   return (
-    <div className={` layout ${theme}` }>
+    <div className={`${theme}`}>
+    <div className={` layout ` }>
       <Navbar/>
       <div className="content">{children}</div>
       {/* <Footer /> */}
+    </div>
     </div>
   );
 };

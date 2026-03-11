@@ -51,12 +51,11 @@
 .Contacts:hover .Contacts1,
 .Resume:hover .Resume1,
 .Activity:hover .Activity1 {
-  color: #eee;
-  background-color: rgba(30, 30, 30, 0.9);
-  width: 100px;
+  /* background-color: #f7f7f7; */
+  width: 90px;
   font-size: 16px;
   justify-content: flex-start;
-  padding: 8px 8px 8px 6px;
+  padding: 5px 5px 5px 6px;
   /* padding-left: 4px; */
   text-align: center;
   clip-path: polygon(0% 0%, 88% 1%, 100% 50%, 88% 99%, 0% 100%);
@@ -67,10 +66,10 @@
   top: -20px; */
   top: -15px;
   /* left:-70px; */
-  left: -103px;
+  left: -80px;
   transition: 0.3s;
-  color: aqua
-    /* top: calc(var(--id)*10px); */
+  /* color: #171717 */
+  /* top: calc(var(--id)*10px); */
 }
 
 .Home:hover svg,
@@ -84,6 +83,13 @@
   fill: aqua
 }
 
+.tooltip {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  color: aqua;
+}
+
 @media screen and (max-width:767px) {
   .rightSidebar {
     right: 0;
@@ -92,7 +98,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    background-color: #000;
+    background-color: #0a0a0a;
     border: none;
     border-radius: 0;
   }

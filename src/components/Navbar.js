@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link to="/button">Button List</Link> */}
 
         <span onClick={changeTheme} >
-          {theme ? SVG.darkMode : SVG.lightMode}
+          {theme==='dark' ? SVG.darkMode : SVG.lightMode}
         </span>
       </div>
     </nav>

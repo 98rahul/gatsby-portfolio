@@ -27,31 +27,30 @@ export default function Home(props) {
   // const image = getImage(file);
   return (
     <ThemeProvider>
-    <Layout theme={theme} switchTheme={switchTheme}>
-        <div className={styles.main_container}>
-          <div className={styles.profile_box}>
-            <Profile />
-          </div>
-          <section className={styles.content_box}>
-          <div></div>
-          {/* <img src="/banner.png" alt="banner" style={{ maxWidth: "100%" }} /> */}
-          <div className={styles.completePage}>
-            <Introduction />
-            <AboutMe />
-            <Services />
-            <MySkills />
-            <ContactMe />
-          </div>
-          <div></div>
-          {/* <GatsbyImage image={getImage(file)} alt="heoo" /> */}
-          {/* <p>
-            {site.siteMetadata.title}-{site.siteMetadata.description}
-          </p> */}
-          </section>
-          <RightSidebar />
-       </div>
-    </Layout>
-
+      <Layout theme={theme} switchTheme={switchTheme}>
+          <div className={styles.main_container}>
+            <div className={styles.profile_box}>
+              <Profile />
+            </div>
+            <section className={styles.content_box}>
+            <div></div>
+            {/* <img src="/banner.png" alt="banner" style={{ maxWidth: "100%" }} /> */}
+            <div className={styles.completePage}>
+              <Introduction />
+              <AboutMe />
+              <Services />
+              <MySkills />
+              <ContactMe />
+            </div>
+            <div></div>
+            {/* <GatsbyImage image={getImage(file)} alt="heoo" /> */}
+            {/* <p>
+              {site.siteMetadata.title}-{site.siteMetadata.description}
+            </p> */}
+            </section>
+            <RightSidebar />
+        </div>
+      </Layout>
     </ThemeProvider>
   );
 }
