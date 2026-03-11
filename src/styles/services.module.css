@@ -55,7 +55,8 @@
     color: #ffc107;
     font-size: clamp(16px, 2vw, 30px);
 }
-.card .desc{
+
+.card .desc {
     line-height: 1.2rem;
     word-spacing: .7px;
     letter-spacing: 0.3px;
@@ -70,7 +71,8 @@
     transition: 0.3s;
     box-shadow: 1px 1px 10px 1px #3e3e, -1px -1px 10px 1px #3e3e;
 }
-.targetSvg svg{
+
+.targetSvg svg {
     height: 50px;
     width: 50px;
 }

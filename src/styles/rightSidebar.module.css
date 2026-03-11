@@ -4,7 +4,7 @@
   box-sizing: border-box;
   align-items: start;
   border: 1px solid #eee;
-  padding:  10px;
+  padding: 10px;
   border-radius: 10px;
   position: fixed;
   right: 5%;
@@ -69,8 +69,8 @@
   /* left:-70px; */
   left: -80px;
   transition: 0.3s;
-  color:aqua
-  /* top: calc(var(--id)*10px); */
+  color: aqua
+    /* top: calc(var(--id)*10px); */
 }
 
 .Home:hover svg,
@@ -80,13 +80,11 @@
 .Projects:hover svg,
 .Contacts:hover svg,
 .Resume:hover svg,
-.Activity:hover svg{
-  fill:aqua
+.Activity:hover svg {
+  fill: aqua
 }
 
 @media screen and (max-width:700px) {
-  .rightSidebar{
-    
-  }
-  
+  .rightSidebar {}
+
 }

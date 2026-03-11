@@ -70,15 +70,16 @@ nav a:hover {
 }
 
 @media screen and (width<700px) {
-  nav{
+  nav {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
   }
+
   nav .links {
     display: flex;
     justify-content: space-evenly;
   }
-  
+
 }
 
 .content {
@@ -94,6 +95,7 @@ nav a:hover {
 
 .light {
   background-color: hsl(250, 93%, 20%);
+
   .content {
     color: #000 !important;
   }

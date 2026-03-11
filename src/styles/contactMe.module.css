@@ -10,7 +10,7 @@
 }
 
 .aboutMe {
-margin-top: 1.3vw;
+    margin-top: 1.3vw;
     display: flex;
     flex-direction: column;
 
@@ -23,7 +23,7 @@ margin-top: 1.3vw;
 }
 
 .desc {
-    
+
     margin: 2vw 0;
     display: flex;
     flex-direction: column;
@@ -33,12 +33,13 @@ margin-top: 1.3vw;
     word-spacing: .3px; */
 }
 
-.desc .formDiv{
+.desc .formDiv {
     display: flex;
     flex-direction: column;
     margin: 1vh 0;
 }
-.formDiv input{
+
+.formDiv input {
     padding: 5px 0 3px 5px;
     margin-top: 7px;
     caret-color: orange;
@@ -46,18 +47,20 @@ margin-top: 1.3vw;
     outline: none;
     background-color: transparent;
 }
-.formDiv label::after{
+
+.formDiv label::after {
     content: "*";
     color: red;
-    padding-left:4px ;
+    padding-left: 4px;
 }
 
-.dashed{
+.dashed {
     height: 2px;
     background-color: #eee;
     margin: 2vw 0;
 }
-.btn{
-    width:50%;
+
+.btn {
+    width: 50%;
     margin: 0 auto;
 }

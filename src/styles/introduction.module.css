@@ -3,11 +3,13 @@
     padding: 10px;
     margin-bottom: 3vw;
 }
+
 @media screen and (width< 700px) {
-    .container{
+    .container {
         margin-top: 64px;
     }
 }
+
 .introBtn {
 
     width: 200px;
@@ -68,7 +70,8 @@
     letter-spacing: 0.6px;
 }
 
-.one, .two {
+.one,
+.two {
     font-size: 16px;
 }
 

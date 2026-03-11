@@ -1,7 +1,7 @@
 .btn {
     box-sizing: border-box;
     margin: 5px;
-    min-width:22%;
+    min-width: 22%;
     text-align: center;
     padding: 8px 0;
     color: #000;
@@ -9,31 +9,37 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items:center ;
- 
+    align-items: center;
+
 }
-.btn  svg {
+
+.btn svg {
     margin-right: 5px;
 }
-.btn:hover svg{
-    fill:rgb(5, 76, 76)
-} 
+
+.btn:hover svg {
+    fill: rgb(5, 76, 76)
+}
+
 .plain {
     border: 1px solid #f8f9fa;
-    border:1px solid #f8f9fa;
-   
-    
+    border: 1px solid #f8f9fa;
+
+
 }
+
 .primary {
     border: 1px solid #007bff;
     background-color: #007bff;
-    color:#000
+    color: #000
 }
-.info{
+
+.info {
     border: 1px solid #17a2b8;
     background-color: #17a2b8;
 }
-.dark{
+
+.dark {
     border: 1px solid #343a40;
     background-color: #343a40;
 }
@@ -42,24 +48,25 @@
 
 
 .secondary {
-    border: 1px solid  #6c757d;
-    background-color: #6c757d;;
+    border: 1px solid #6c757d;
+    background-color: #6c757d;
+    ;
 }
 
 .success {
-     border: 1px solid  #28a745;
-     background-color: #28a745;
+    border: 1px solid #28a745;
+    background-color: #28a745;
 }
 
 .warning {
-     border: 1px solid #ffc107;
-     background-color:#ffc107;
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
 }
 
 .danger {
-     border: 1px solid  #dc3545;
-     background-color:#dc3545;
-     color:#000
+    border: 1px solid #dc3545;
+    background-color: #dc3545;
+    color: #000
 }
 
 .rounded {
@@ -69,13 +76,14 @@
 
 .outline {
     border-width: 3px;
-    background-color: #fff  !important;
-    color:#000;
-   
+    background-color: #fff !important;
+    color: #000;
+
 }
-.roundOutline{
-    background-color: #fff  !important;
-    color:#000;
+
+.roundOutline {
+    background-color: #fff !important;
+    color: #000;
     /* border: 1px solid; */
     border-radius: 18px;
 }

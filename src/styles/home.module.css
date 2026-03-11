@@ -5,17 +5,19 @@
   grid-template-columns: 2fr 4fr 1fr;
   grid-gap: 3vw;
 }
+
 @media screen and (width<700px) {
-  .header{
+  .header {
     grid-template-columns: 1fr 8fr 1fr;
   }
 }
+
 .header h2 {
-  font-size:clamp(16px,4vw,10vw);
+  font-size: clamp(16px, 4vw, 10vw);
 }
 
 .header h3 {
-  font-size:clamp(14px,3vw,10vw);
+  font-size: clamp(14px, 3vw, 10vw);
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -41,28 +43,31 @@
 }
 
 @media screen and (max-width:700px) {
-  .profile{
-      display: none;
+  .profile {
+    display: none;
   }
-  
+
 }
+
 @media screen and (max-width:500px) {
-  .profile{
-      width: 100%;
+  .profile {
+    width: 100%;
   }
-  
+
 }
+
 @media screen and (max-width:700px) {
-  .header{
-      margin-top:4vh;
+  .header {
+    margin-top: 4vh;
   }
-  
+
 }
+
 @media screen and (max-width:500px) {
-  .header{
-      margin-top:10vh;
+  .header {
+    margin-top: 10vh;
   }
-  
+
 }
 
 .completePage {

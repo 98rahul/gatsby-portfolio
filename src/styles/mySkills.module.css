@@ -29,23 +29,26 @@
     flex-direction: column;
     /* background: red; */
 }
-.cardHeading{
+
+.cardHeading {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .cardHeading span {
-    margin: 3px ;
+    margin: 3px;
 }
-.cardHeading:hover span ,
-.cardHeading:hover svg{
+
+.cardHeading:hover span,
+.cardHeading:hover svg {
     color: aqua;
-    fill:aqua;
+    fill: aqua;
     transition: 0.3s;
 }
+
 .cardAll {
     display: flex;
-    
+
     /* 
     width:100%;// must to add while using the grid
     display: grid;
@@ -71,7 +74,7 @@
     /* background-color: #eee; */
     height: 144px;
     /* width: 96px; */
-    min-width:100px;
+    min-width: 100px;
     border-radius: 10px;
     border: 1px solid #eee;
     display: flex;

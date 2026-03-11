@@ -16,22 +16,26 @@
     gap: 10px;
 
 }
+
 @media screen and (width<700px) {
-    .aboutMe{
+    .aboutMe {
         margin-top: 2.3vw;
     }
 }
+
 .aboutMe span {
     font-size: 24px;
     font-weight: 400;
     margin: 10px 0;
     line-height: 1.7px;
 }
+
 @media screen and (width<700px) {
     .aboutMe span {
         font-size: 24px;
     }
 }
+
 .desc {
     margin: 2rem 0;
     font-size: 1rem;
