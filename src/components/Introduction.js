@@ -21,7 +21,7 @@ const Introduction = () => {
       </div>
       <div className={styles.number}>
         <div className={styles.one}>
-          <span className={styles.twoPLus}>4 years</span>
+          <span className={styles.twoPLus}>4.5+ Years</span>
           <span className={styles.common}>of work  experience</span>
         </div>
         <div className={styles.two}>

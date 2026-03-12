@@ -40,14 +40,14 @@
 }
 
 .number {
-    display: grid;
-    grid-template-columns: 3fr 3fr 2fr;
-    gap: 20px
+    display: flex;
+    align-items: center;
+    gap: 48px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:767px) {
     .number {
-        grid-template-columns: 3fr 3fr 0fr;
+        gap: 32px;
     }
 }
 
@@ -55,7 +55,6 @@
 .two {
     display: flex;
     flex-direction: column;
-    padding-left: 5px;
 
 }
 
@@ -64,6 +63,12 @@
     margin: 5px 0;
     color: aqua;
     /* font-size: clamp(16px, 1.6vw, 32px) */
+}
+
+.twoPLus {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-style: oblique;
 }
 
 .common {

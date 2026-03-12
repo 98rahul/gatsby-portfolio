@@ -56,11 +56,13 @@
         line-height: 150%;
         font-style: italic;
         font-weight: 400;
-        background-color: antiquewhite;
         padding: 4px;
-        color: black;
         font-weight: 600;
 
+    }
+
+    & span:hover {
+        text-decoration: underline;
     }
 }
 

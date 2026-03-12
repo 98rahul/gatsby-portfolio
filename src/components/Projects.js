@@ -15,7 +15,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className={styles.container} id="Services">
+    <div className={styles.container} id="Projects">
       <div className={styles.projectsBtn} role="button">
         <img src={img.project} alt="" srcset="" />
         <span>Projects</span>
@@ -39,7 +39,7 @@ const ProjectCard = (item) => {
       <div className={styles.textContent}>
          <div className="className">{`item.logo` }</div>
           <div className="className">{ item.title}</div>
-          <div className="className">{ item.title}</div>
+          <div className="className">{ item.about}</div>
           <div className={styles.stack_list}>
             {item.techStack.map((st) => <span>{st}</span>)}
           </div>
