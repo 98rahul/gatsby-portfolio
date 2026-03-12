@@ -1,7 +1,8 @@
 .navbar {
-    padding: 20px;
+    padding: 10px 20px;
+    height: 100px;
     position: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
     max-width: inherit;
     width: 100%;
     margin: auto;
@@ -10,7 +11,10 @@
     align-items: center;
     justify-content: space-between;
     /* background-color: rgb(0, 0, 0); */
-    background-color: #0a0a0a;
+    /* background-color: #0a0a0a; */
+
+    backdrop-filter: saturate(180%) blur(20px);
+    transition: background-color .1 ease-in-out;
 }
 
 

@@ -24,7 +24,7 @@
 
     & .profile_box {
       width: 100%;
-      max-width: 600px;
+      max-width: 400px;
       height: 500px;
       /* margin: auto; */
       display: flex;
@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (width<1024px) {
+@media screen and (width<1025px) {
   .content_box {
     width: calc(100% - 48px);
     margin-top: 20px;
@@ -63,15 +63,17 @@
 
 @media screen and (max-width:640px) {
   .profile_box {
-    height: 470px !important;
+    height: fit-content !important;
   }
 
   .main_container {
     width: 100%;
+    margin: auto;
 
     & .profile_box {
+      max-width: 320px !important;
       width: 100%;
-      max-width: 540px;
+
       /* height: 410px; */
       margin: 0;
     }
