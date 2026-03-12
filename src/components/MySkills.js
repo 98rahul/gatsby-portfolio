@@ -6,11 +6,12 @@ import { SVG } from "../svg";
 
 import img from "../images/frontend/png/index";
 const frontendArr = [
-  { title: "CSS", icon: `${img.css}` },
-  { title: "JavaScript", icon: `${img.js}` },
   { title: "React Js", icon: `${img.react}` },
-  { title: "React Native", icon: `${img.react}` },
+  { title: "Next.js", icon: `${img.nextjs}` },
+  { title: "JavaScript", icon: `${img.js}` },
+  { title: "CSS", icon: `${img.css}` },
   { title: "Tailwind CSS", icon: `${img.tailwind}` },
+  { title: "React Native", icon: `${img.react}` },
   // { title: "Next Js", icon: "icon" },
   { title: "Gatsby", icon: `${img.gatsby}` },
 ];
@@ -96,9 +97,7 @@ const Card = ({ title, img }) => {
     <div className={styles.card}>
       <div className={styles.box}>
         <img
-          src={img}
-          height="56px"
-          width="56px"
+          src={img}         
           style={{ objectFit: "contain" }}
           alt="imag"
         />

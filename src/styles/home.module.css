@@ -7,6 +7,12 @@
   }
 }
 
+.completePage {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
 .content_box {
   /* background-color: black; */
   width: calc(100% - 500px);

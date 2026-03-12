@@ -11,9 +11,9 @@ import tailwind from "./tailwind.png";
 import gatsby from "./gatsby.png";
 import jwt from "./jwt.png";
 import mongo from "./mongo.png";
-
+import nextjs from './Next.js.jpeg';
 import node from "./node.png";
-
+import project from './project.png';
 const img = {
   mongo,
   tailwind,
@@ -26,6 +26,6 @@ const img = {
   html,
   mysql,
   github,
-  node,
+  node,nextjs,project
 };
 export default img;

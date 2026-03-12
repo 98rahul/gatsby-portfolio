@@ -11,6 +11,7 @@ import MySkills from "../components/MySkills";
 import { ContactMe } from "../components/ContactMe";
 import RightSidebar from "../components/RightSidebar";
 import { ThemeProvider } from "../store/ThemeContext";
+import Projects from "../components/Projects";
 
 export default function Home(props) {
   const [theme, setTheme] = useState('dark'); //'dark' || 'light'
@@ -37,7 +38,8 @@ export default function Home(props) {
             {/* <img src="/banner.png" alt="banner" style={{ maxWidth: "100%" }} /> */}
             <div className={styles.completePage}>
               <Introduction />
-              <AboutMe />
+              <Projects />
+              {/* <AboutMe /> */}
               <Services />
               <MySkills />
               <ContactMe />
