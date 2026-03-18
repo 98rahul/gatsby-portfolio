@@ -31,8 +31,8 @@ body {
 
 p {
   /* TODO remove */
-  margin: 16px auto;
-  line-height: 1.5em;
+  /* margin: 16px auto;
+  line-height: 1.5em; */
 }
 
 .layout {

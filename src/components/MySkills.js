@@ -10,7 +10,7 @@ const frontendArr = [
   { title: "Next.js", icon: `${img.nextjs}` },
   { title: "JavaScript", icon: `${img.js}` },
   { title: "CSS", icon: `${img.css}` },
-  { title: "Tailwind CSS", icon: `${img.tailwind}` },
+  { title: "Tailwind", icon: `${img.tailwind}` },
   { title: "React Native", icon: `${img.react}` },
   // { title: "Next Js", icon: "icon" },
   { title: "Gatsby", icon: `${img.gatsby}` },

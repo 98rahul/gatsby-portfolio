@@ -1,13 +1,12 @@
 .container {
     height: fit-content;
     padding: 10px;
-    margin-top: 2vw;
+    /* margin-top: 2vw; */
 }
 
 .introBtn {
-
     width: fit-content;
-
+    /* margin-bottom: 12px; */
 }
 
 .aboutMe {
@@ -27,6 +26,7 @@
     /* margin: 1rem 0; */
     display: flex;
     flex-direction: column;
+    gap: 0px;
 }
 
 .cardHeading {
@@ -40,8 +40,8 @@
 }
 
 .cardHeading span {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 .cardHeading:hover span,
@@ -73,7 +73,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+
+    & p {
+        font-size: 14.6px;
+    }
 }
+
 
 .box {
     width: 100px;

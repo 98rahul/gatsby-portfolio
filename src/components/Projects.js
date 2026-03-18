@@ -8,7 +8,7 @@ import Portfolio2 from '../images/featured/Portfolio-2.png'
 import miStoreBanner from '../images/featured/miStore-banner.png';
 const projects = [
   {title:'Realsatisfied',link:'',bgImg:Portfolio2, about:'loream 0010',logo:'',img:'',techStack:['Reactjs,','Nextjs,','Tailwind CSS,','CSS']},
-    {title:'Mi Clone',link:'',bgImg:miStoreBanner, about:'loream 0010',logo:'',img:'',techStack:['Reactjs,','CSS','']},
+    {title:'Mi Clone',link:'',bgImg:miStoreBanner, about:'The first responsive website <b>MI-Store Clone</b> i built on the initial days to learn the responsiveness',logo:'',img:'',techStack:['Reactjs,','CSS','']},
     {title:'Portfolio',link:'',bgImg:Portfolio2, about:'loream 0010',logo:'',img:'',techStack:['Gatsby,','CSS','']},
     {title:'Portfolio',link:'',bgImg:Portfolio2, about:'loream 0010',logo:'',img:'',techStack:['Gatsby,','CSS','']},
 ]

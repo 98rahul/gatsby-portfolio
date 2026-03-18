@@ -10,8 +10,9 @@
   padding: 10px;
   border-radius: 10px;
   position: fixed;
-  right: 20px;
-  top: 30%;
+  right: 22px;
+  top: 25%;
+  gap: 6px;
   background: transparent;
   /* background-color: red; */
   /* position: relative; */

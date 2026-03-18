@@ -22,30 +22,59 @@
     margin: 10px 0;
 }
 
-.desc {
-
-    margin: 2vw 0;
+.formBox {
+    /* margin: 2vw 0; */
     display: flex;
     flex-direction: column;
-    padding: 1vw;
+    gap: 12px;
+    /* padding: 1vw; */
     /* font-size: 1vw; */
     /* letter-spacing: .6px;
     word-spacing: .3px; */
 }
 
-.desc .formDiv {
+.formBox .formDiv {
     display: flex;
     flex-direction: column;
-    margin: 1vh 0;
+    gap: 4px;
+    /* margin: 1vh 0; */
 }
 
-.formDiv input {
-    padding: 5px 0 3px 5px;
+.formDiv .inputField {
+    /* padding: 5px 0 3px 5px; */
     margin-top: 7px;
     caret-color: orange;
     border: none;
     outline: none;
     background-color: transparent;
+}
+
+.formDiv .inputField {
+    opacity: 0.9;
+    font-size: 18px;
+    line-height: 144%;
+    background-color: transparent;
+}
+
+
+
+
+.formDiv textarea:focus-visible {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.errorMsg {
+    font-size: 14px;
+    line-height: 150%;
+    color: red;
+    opacity: 0.9;
+}
+
+.formDiv label {
+    font-size: 16px;
+    opacity: 0.8;
 }
 
 .formDiv label::after {

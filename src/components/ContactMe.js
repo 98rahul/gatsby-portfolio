@@ -38,13 +38,13 @@ export const ContactMe = () => {
     // }
     // return true;
   };
-
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const validation = (field) => {
     switch (field) {
       case "name": {
-        if (!userInfo.name || userInfo.name.length < 3) {
+        if (!userInfo.name?.trim() ) {
           setUserInfo((prevState) => {
-            return { ...prevState, nameErr: "name is invalid!" };
+            return { ...prevState, nameErr: "Please add your name" };
           });
         }
         return true;
@@ -52,19 +52,23 @@ export const ContactMe = () => {
         // break;
       }
       case "email": {
-        if (!userInfo.email) {
+        if (!userInfo.email?.trim()) {
           setUserInfo((prevState) => {
-            return { ...prevState, emailErr: "email is invalid!" };
-          });
-        }
+              return { ...prevState, emailErr: "Please add your email" };
+            });
+        }else  if ( !emailRegex.test(userInfo.email?.trim())) {
+            setUserInfo((prevState) => {
+              return { ...prevState, emailErr: "Please add a valid email" };
+            });
+          }
         return true;
         // flag = true;
         // break;
       }
       case "msg": {
-        if (!userInfo.msg || userInfo.msg.trim().length < 10) {
+        if (!userInfo.msg?.trim()) {
           setUserInfo((prevState) => {
-            return { ...prevState, msgErr: "message shouldn't too short!" };
+            return { ...prevState, msgErr: "Please add the message" };
           });
         }
         return true;
@@ -138,10 +142,11 @@ export const ContactMe = () => {
           <b style={{ color: "aqua", marginLeft: "10px" }}>Together</b>
         </span>
       </div>
-      <form className={styles.desc}>
+      <form className={styles.formBox}>
         <div className={styles.formDiv}>
           <label>Full Name</label>
           <input
+          className={styles.inputField}
             placeholder="Your Name"
             type="text"
             value={userInfo.name}
@@ -149,12 +154,13 @@ export const ContactMe = () => {
             onFocus={() => foucsInput("nameErr")}
             onChange={(e) => getInputVal("name", e.target.value)}
           />
+        {userInfo.nameErr && <p className={styles.errorMsg}>{userInfo.nameErr}</p>}
         </div>
-        {userInfo.nameErr && <p style={{ color: "red" }}>{userInfo.nameErr}</p>}
         {/* {!userInfo.name && <p style={{ color: "red" }}>Name filed can't be blank</p>} */}
         <div className={styles.formDiv}>
           <label>Email</label>
           <input
+          className={styles.inputField}
             placeholder="Your Email"
             type="email"
             value={userInfo.email}
@@ -162,13 +168,14 @@ export const ContactMe = () => {
             onFocus={() => foucsInput("emailErr")}
             onChange={(e) => getInputVal("email", e.target.value)}
           />
-        </div>
         {userInfo.emailErr && (
-          <p style={{ color: "red" }}>{userInfo.emailErr}</p>
+          <p className={styles.errorMsg}>{userInfo.emailErr}</p>
         )}
+        </div>
         <div className={styles.formDiv}>
           <label>Message</label>
-          <input
+          <textarea
+          className={styles.inputField}
             placeholder="Your Message"
             type="text"
             value={userInfo.msg}
@@ -176,8 +183,8 @@ export const ContactMe = () => {
             onFocus={() => foucsInput("msgErr")}
             onChange={(e) => getInputVal("msg", e.target.value)}
           />
+        {userInfo.msgErr && <p className={styles.errorMsg}>{userInfo.msgErr}</p>}
         </div>
-        {userInfo.msgErr && <p style={{ color: "red" }}>{userInfo.msgErr}</p>}
       </form>
       <div className={styles.dashed}></div>
       <div className={styles.btn} onClick={handleSubmit}>
