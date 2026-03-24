@@ -10,12 +10,20 @@
     box-shadow:
         rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
         rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-    transition: transform 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    /* transition: all 1.6s ease-in-out; */
     will-change: transform;
 }
 
 .profile_container:hover {
     transform: scale(1.02) rotateZ(-0.9deg);
+
+    & .imgBox {
+        & img {
+            transform: scale(1.02) rotateZ(-0.9deg);
+            zoom: 1.4;
+        }
+    }
 }
 
 .mid_wrapper {

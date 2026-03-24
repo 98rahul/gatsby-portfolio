@@ -25,17 +25,15 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 32px;
     margin-top: 2vw;
-
-
 }
 
 @media screen and (max-width:640px) {
     .cardContainer {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 28px;
         grid-template-columns: 1fr;
     }
 }

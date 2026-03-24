@@ -164,7 +164,7 @@ const RightSidebar = () => {
   return (
     <div className={styles.rightSidebar}>
       {menuList.map((elem, id) => (
-        <a className={`${styles[`${elem.desc}`]}  `} href={`#${elem.desc}`} style={{padding:'4px 0'}} 
+        <a className={`${styles[`${elem.desc}`]}  `} href={`#${elem.desc}`} 
         onClick={() => {
           elem.link &&  window.open(`${elem.link}`)}}
         >
